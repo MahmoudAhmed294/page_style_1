@@ -1,0 +1,146 @@
+// *{
+//     text-align: left;
+// }
+$color: #4f45e3;
+$color2: rgb(118, 121, 119);
+* {
+  scroll-behavior: smooth;
+}
+.navbar {
+  // background-color: transparent;
+  transition: 0.5s;
+  z-index: 1000;
+  width: 100%;
+  top: 0;
+  .container {
+    .text-right {
+      a {
+        color: whitesmoke !important;
+        background-color: $color !important;
+        width: 100px;
+        height: 40px;
+        margin-right: 0;
+      }
+    }
+
+    .navbar-brand {
+      color: $color2;
+    }
+    .collapse {
+      ul {
+        li {
+          .active {
+            b {
+              text-decoration: underline;
+            }
+          }
+          color: $color2 !important;
+
+          a {
+            color: $color2 !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+header {
+    background-image: url("../img/4.jpg");
+    // background-image: ;
+  margin-top: -56px;
+  background-size: cover;
+  overflow: hidden;
+  height: 100vh;
+
+  background-repeat: no-repeat;
+
+  .overlay {
+    min-height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+
+    .container,
+    .row {
+      .col-md-6 {
+        margin-top: 4rem;
+        transition: 0.7s ease-in-out;
+        top: 500px;
+
+        color: whitesmoke;
+        p {
+          color: gray;
+        }
+        a {
+          background-color: $color;
+          width: 25%;
+          color: whitesmoke;
+        }
+      }
+      min-height: 100vh;
+      .rounded {
+        position: relative;
+        top: 500px;
+        transition: 0.8s ease-in-out;
+        padding: 15px;
+
+        background-color: white;
+        border-color: $color !important;
+        button {
+          background-color: $color;
+          border: $color;
+        }
+      }
+    }
+  }
+}
+body {
+  @media (max-width: 767.98px) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+#courses {
+  transition-delay: 0.5s;
+  .section-title {
+    h1 {
+      margin-bottom: 3.5rem;
+    }
+  }
+  .bg-light {
+    height: 50vh;
+  }
+  .section-title {
+    h1 {
+      transition: 0.9s ease-in-out;
+      transform: translateY(100px);
+      opacity: 0;
+    }
+    background-color: $color;
+    height: 50vh;
+  }
+  .owl-carousel {
+    display: inline-flex;
+    .slider-item {
+      transition: 0.9s ease-in-out;
+      transform: translateY(100);
+      opacity: 0;
+
+      img {
+        width: 100%;
+        height: 300px;
+      }
+    }
+  }
+}
+
+// @media (min-width: 900px) {
+//         .col-2{
+// .btn{
+//     text-align: left;
+// }
+//         }
+//     }
+
+//         align-content: left !important;
+// background-color: red;
